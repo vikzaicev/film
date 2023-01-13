@@ -1,0 +1,149 @@
+@import "nullstyle.scss";
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(165, 165, 230);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color: #171b0c;
+    // background: url(../img/bg.jpg) no-repeat;
+    // background-size: cover;
+}
+
+
+body.noscrol {
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    flex: 1 1 auto;
+    overflow: auto;
+}
+img {
+    width: 100%;
+}
+
+.contener {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+//==================header=================//
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(190, 190, 240);
+    padding: 16px 0;
+    z-index: 5;
+
+    &__contener {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__link {
+        color: #171b0c;
+        font-size: 36px;
+        font-weight: 600;
+        margin-right: 10px;
+        @media (max-width: 760px) {
+            font-size: 28px;
+        }
+        @media (max-width: 370px) {
+            font-size: 24px;
+        }
+    }
+
+    &__form {
+    }
+
+    &__input {
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid #171b0c;
+        @media (max-width: 760px) {
+            padding: 5px;
+            max-width: 150px;
+        }
+    }
+    &__input:focus {
+        box-shadow: 2px 2px 10px #171b0c;
+    }
+}
+//==================header=================//
+
+//==================main===================//
+
+.main {
+    margin-top: 100px;
+    
+    
+
+    &__contener {
+    }
+
+    &__items {
+                display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    &__item {
+        position: relative;
+        background-color: rgb(66, 39, 39);
+        border: 1px solid #171b0c;
+        margin: 10px;
+        padding: 10px;
+        width: 320px;
+    }
+
+    &__image {
+        
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    &__category {
+        font-size: 16px;
+    }
+
+    &__rating {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgb(13, 20, 58);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+    }
+}
+
+//==================main===================//
